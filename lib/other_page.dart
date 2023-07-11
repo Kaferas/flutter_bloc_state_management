@@ -19,11 +19,12 @@ class OtherPage extends StatelessWidget {
               height: 300,
             ),
             Flexible(
-                fit: FlexFit.tight,
-                child: Container(
-                  color: Colors.grey,
-                  height: 400,
-                ))
+              fit: FlexFit.loose,
+              child: Container(
+                color: Colors.tealAccent,
+                height: 400,
+              ),
+            ),
           ],
         ),
       ),
