@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bloc_full/other_page.dart';
 
 import 'blocs/counter/counter_bloc.dart';
+=======
+import 'package:flutter_bloc_full/cubits/counter/counter_cubit.dart';
+import 'package:flutter_bloc_full/other_page.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+>>>>>>> develop
 
 void main() {
   runApp(const MyApp());
