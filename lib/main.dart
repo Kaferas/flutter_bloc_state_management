@@ -18,19 +18,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider<ThemeBloc>(
       create: (context) => ThemeBloc(),
-      child: BlocBuilder<ThemeBloc, ThemeState>(
-        builder: (context, state) {
-          return MaterialApp(
-            title: 'Flutter Demo',
-            debugShowCheckedModeBanner: false,
-            theme:state.appTheme ==AppTheme.light ? ThemeData.light() : ThemeData.dark(),
-            home: const MyHomePage(),
+        child:
+           Builder(
+             builder: (context) {
+               return MaterialApp(
+                debugShowCheckedModeBanner: false,
+                theme:context.watch<ThemeBloc>().state.appTheme ==AppTheme.light ? ThemeData.light() : ThemeData.dark(),
+                home: const MyHomePage(),
           );
-        },
-      ),
-    );
+             }
+           ),
+      );
+    }
   }
-}
+
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
