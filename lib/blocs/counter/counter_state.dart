@@ -4,7 +4,8 @@ part of 'counter_bloc.dart';
 class CounterState extends Equatable {
   final int counter;
  
-  CounterState({
+   // ignore: prefer_const_constructors_in_immutables
+   CounterState({
     required this.counter,
   });
   

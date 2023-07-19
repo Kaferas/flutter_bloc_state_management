@@ -7,11 +7,6 @@ class OtherPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-<<<<<<< HEAD
-        title: Text("Home Page"),
-        ),
-        body: Center(),
-=======
         title: const Text("Other Page"),
       ),
       body: SizedBox(
@@ -33,7 +28,6 @@ class OtherPage extends StatelessWidget {
           ],
         ),
       ),
->>>>>>> develop
     );
   }
 }
